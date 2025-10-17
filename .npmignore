@@ -1,7 +1,12 @@
-# Source files
+# Source files (already built to dist/)
 src/
 tsconfig.json
 tsup.config.ts
+postcss.config.js
+
+# Demo app - not included in npm package
+demo-nextjs/
+demo/
 
 # Development files
 *.test.ts
@@ -20,6 +25,7 @@ tsup.config.ts
 *.swo
 *~
 .DS_Store
+Thumbs.db
 
 # Git files
 .git/
@@ -47,6 +53,20 @@ coverage/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
+
+# Temporary files
+.tmp/
+temp/
+*.tmp
+.cache/
+.parcel-cache/
+
+# Config files
+.npmrc
+.env
+.env.local
+*.tsbuildinfo
 
 # Temporary files
 temp/
