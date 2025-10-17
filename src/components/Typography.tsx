@@ -55,12 +55,12 @@ export interface TypographyProps {
 }
 
 const variantStyles: Record<TypographyVariant, string> = {
-  h1: 'scroll-m-20 font-extrabold tracking-tight leading-[1.1]',
-  h2: 'scroll-m-20 font-semibold tracking-tight first:mt-0 leading-[1.2]',
-  h3: 'scroll-m-20 font-semibold tracking-tight leading-[1.3]',
-  h4: 'scroll-m-20 font-semibold tracking-tight leading-[1.4]',
-  h5: 'scroll-m-20 font-semibold tracking-tight leading-[1.5]',
-  h6: 'scroll-m-20 font-semibold tracking-tight leading-[1.5]',
+  h1: 'scroll-m-20 font-extrabold tracking-tight leading-tight',
+  h2: 'scroll-m-20 font-semibold tracking-tight first:mt-0 leading-tight',
+  h3: 'scroll-m-20 font-semibold tracking-tight leading-snug',
+  h4: 'scroll-m-20 font-semibold tracking-tight leading-snug',
+  h5: 'scroll-m-20 font-semibold tracking-tight leading-normal',
+  h6: 'scroll-m-20 font-semibold tracking-tight leading-normal',
   p: 'leading-7 [&:not(:first-child)]:mt-6',
   span: 'leading-normal',
   strong: 'font-semibold',
