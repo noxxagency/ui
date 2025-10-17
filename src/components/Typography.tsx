@@ -103,8 +103,13 @@ const animationStyles: Record<AnimationType, string> = {
   'scale-in': 'animate-in zoom-in duration-500',
 };
 
-// Add keyframes as a style tag
-if (typeof document !== 'undefined' && !document.getElementById('typography-animations')) {
+// Initialize animations styles on first mount
+let animationsInitialized = false;
+function initializeAnimations() {
+  if (animationsInitialized || typeof document === 'undefined') return;
+  if (document.getElementById('typography-animations')) return;
+  
+  animationsInitialized = true;
   const style = document.createElement('style');
   style.id = 'typography-animations';
   style.textContent = `
@@ -153,6 +158,11 @@ export function Typography({
     : (defaultElements[effectiveVariant as TypographyVariant] || 'p');
   
   const Component = effectiveElement as any;
+  
+  // Initialize animations styles
+  useEffect(() => {
+    initializeAnimations();
+  }, []);
   
   // Intersection Observer for animateOnView
   useEffect(() => {
