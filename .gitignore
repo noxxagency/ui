@@ -1,0 +1,28 @@
+node_modules
+dist
+.DS_Store
+*.log
+.env
+.env.local
+.vscode
+.idea
+*.swp
+*.swo
+coverage
+.turbo
+
+# Demo app - not included in repository
+demo-nextjs/
+
+# Build artifacts
+*.tsbuildinfo
+.cache
+.parcel-cache
+
+# OS files
+Thumbs.db
+
+# Temporary files
+.tmp/
+temp/
+*.tmp

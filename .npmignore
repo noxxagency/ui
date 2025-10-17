@@ -1,0 +1,54 @@
+# Source files
+src/
+tsconfig.json
+tsup.config.ts
+
+# Development files
+*.test.ts
+*.test.tsx
+*.test.js
+*.test.jsx
+*.spec.ts
+*.spec.tsx
+*.spec.js
+*.spec.jsx
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Git files
+.git/
+.gitignore
+.gitattributes
+
+# Scripts
+*.ps1
+*.sh
+
+# Documentation (keep only README and LICENSE in package)
+docs/
+examples/
+CHANGELOG.md
+CONTRIBUTING.md
+*.md
+!README.md
+!LICENSE
+
+# Build artifacts
+node_modules/
+coverage/
+.nyc_output/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Temporary files
+temp/
+tmp/
+*.tmp
