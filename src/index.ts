@@ -63,7 +63,7 @@ export { Logo } from './components/Logo';
 export { Navigation } from './components/Navigation';
 export { NavigationSidebar } from './components/NavigationSidebar';
 export type { NavigationItem, NavigationCategory, NavigationSidebarProps } from './components/NavigationSidebar';
-export { ParticleBackground, HeroParticleBackground, FountainParticleBackground } from './components/ParticleBackground';
+export { ParticleBackground, HeroParticleBackground, FeatureParticleBackground, FountainParticleBackground } from './components/ParticleBackground';
 export { PricingSection } from './components/PricingSection';
 export { PrivacyModal } from './components/PrivacyModal';
 export { PropsTable } from './components/PropsTable';
