@@ -1,14 +1,12 @@
 
 import { cn } from "../../utils"
 
-function Card({ className = "", noPadding = false, noGap = false, ...props }) {
+function Card({ className, ...props }: React.HTMLAttributes<HTMLDivElement>) {
   return (
     <div
       data-slot="card"
       className={cn(
-        "bg-card text-card-foreground flex flex-col rounded-xl border shadow-sm",
-        !noPadding && "py-6",
-        !noGap && "gap-6",
+        "bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm",
         className
       )}
       {...props}
@@ -16,13 +14,12 @@ function Card({ className = "", noPadding = false, noGap = false, ...props }) {
   )
 }
 
-function CardHeader({ className = "", noPadding = false, padding = "px-6", ...props }) {
+function CardHeader({ className, ...props }: React.HTMLAttributes<HTMLDivElement>) {
   return (
     <div
       data-slot="card-header"
       className={cn(
-        "@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6",
-        !noPadding && padding,
+        "@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6",
         className
       )}
       {...props}
@@ -30,7 +27,7 @@ function CardHeader({ className = "", noPadding = false, padding = "px-6", ...pr
   )
 }
 
-function CardTitle({ className = "", ...props }) {
+function CardTitle({ className, ...props }: React.HTMLAttributes<HTMLDivElement>) {
   return (
     <div
       data-slot="card-title"
@@ -40,7 +37,7 @@ function CardTitle({ className = "", ...props }) {
   )
 }
 
-function CardDescription({ className = "", ...props }) {
+function CardDescription({ className, ...props }: React.HTMLAttributes<HTMLDivElement>) {
   return (
     <div
       data-slot="card-description"
@@ -50,7 +47,7 @@ function CardDescription({ className = "", ...props }) {
   )
 }
 
-function CardAction({ className = "", ...props }) {
+function CardAction({ className, ...props }: React.HTMLAttributes<HTMLDivElement>) {
   return (
     <div
       data-slot="card-action"
@@ -63,17 +60,17 @@ function CardAction({ className = "", ...props }) {
   )
 }
 
-function CardContent({ className = "", noPadding = false, ...props }) {
+function CardContent({ className, ...props }: React.HTMLAttributes<HTMLDivElement>) {
   return (
     <div
       data-slot="card-content"
-      className={cn(!noPadding && "px-6", className)}
+      className={cn("px-6", className)}
       {...props}
     />
   )
 }
 
-function CardFooter({ className = "", ...props }) {
+function CardFooter({ className, ...props }: React.HTMLAttributes<HTMLDivElement>) {
   return (
     <div
       data-slot="card-footer"
