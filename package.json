@@ -1,6 +1,6 @@
 {
   "name": "@noxxagency/ui",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Universal Reusable Component Library - 60+ beautifully designed React components built with TypeScript, Radix UI, and Tailwind CSS",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
